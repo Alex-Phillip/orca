@@ -21,6 +21,21 @@ const yellowRedStreakyBtn = document.querySelector('#yellow-red-streaky');
 const lightGreenBtn = document.querySelector('#light-green');
 const circles = document.querySelectorAll('.circle');
 
+const buttons = [
+  orangeBtn,
+  amberWhiteStreakyBtn,
+  redOpalBtn,
+  sunflowerYellowBtn,
+  blueStreakyBtn,
+  frenchVanillaBtn,
+  violetBtn,
+  blackClearStreakyBtn,
+  turquoiseWhiteStreakyBtn,
+  egyptianBlueBtn,
+  yellowRedStreakyBtn,
+  lightGreenBtn,
+];
+
 compactBtn.addEventListener('click', () => {
   container.classList.toggle('compact-container');
   main.classList.toggle('compact-main');
@@ -85,6 +100,9 @@ const allOrange = () => {
     circle.src = './assets/img/orange.jpg';
   });
   orcaGrid.classList.toggle('solid-grid');
+  buttons.forEach((button) => {
+    button.disabled = true;
+  });
 };
 
 const allAmberWhiteStreaky = () => {
@@ -92,6 +110,9 @@ const allAmberWhiteStreaky = () => {
     circle.src = './assets/img/amber-white-streaky.jpg';
   });
   orcaGrid.classList.toggle('solid-grid');
+  buttons.forEach((button) => {
+    button.disabled = true;
+  });
 };
 
 const allRedOpal = () => {
@@ -99,6 +120,9 @@ const allRedOpal = () => {
     circle.src = './assets/img/red-opal.jpg';
   });
   orcaGrid.classList.toggle('solid-grid');
+  buttons.forEach((button) => {
+    button.disabled = true;
+  });
 };
 
 const allSunflowerYellow = () => {
@@ -106,6 +130,9 @@ const allSunflowerYellow = () => {
     circle.src = './assets/img/sunflower-yellow.jpg';
   });
   orcaGrid.classList.toggle('solid-grid');
+  buttons.forEach((button) => {
+    button.disabled = true;
+  });
 };
 
 const allBlueStreaky = () => {
@@ -113,6 +140,9 @@ const allBlueStreaky = () => {
     circle.src = './assets/img/blue-streaky.jpg';
   });
   orcaGrid.classList.toggle('solid-grid');
+  buttons.forEach((button) => {
+    button.disabled = true;
+  });
 };
 
 const allFrenchVanilla = () => {
@@ -120,6 +150,9 @@ const allFrenchVanilla = () => {
     circle.src = './assets/img/french-vanilla.jpg';
   });
   orcaGrid.classList.toggle('solid-grid');
+  buttons.forEach((button) => {
+    button.disabled = true;
+  });
 };
 
 const allViolet = () => {
@@ -127,6 +160,9 @@ const allViolet = () => {
     circle.src = './assets/img/violet.jpg';
   });
   orcaGrid.classList.toggle('solid-grid');
+  buttons.forEach((button) => {
+    button.disabled = true;
+  });
 };
 
 const allBlackClearStreaky = () => {
@@ -134,6 +170,9 @@ const allBlackClearStreaky = () => {
     circle.src = './assets/img/black-clear-streaky.jpg';
   });
   orcaGrid.classList.toggle('solid-grid');
+  buttons.forEach((button) => {
+    button.disabled = true;
+  });
 };
 
 const allTurquoiseWhiteStreaky = () => {
@@ -141,6 +180,9 @@ const allTurquoiseWhiteStreaky = () => {
     circle.src = './assets/img/turquoise-white-streaky.jpg';
   });
   orcaGrid.classList.toggle('solid-grid');
+  buttons.forEach((button) => {
+    button.disabled = true;
+  });
 };
 
 const allEgyptianBlue = () => {
@@ -148,6 +190,9 @@ const allEgyptianBlue = () => {
     circle.src = './assets/img/egyptian-blue.jpg';
   });
   orcaGrid.classList.toggle('solid-grid');
+  buttons.forEach((button) => {
+    button.disabled = true;
+  });
 };
 
 const allYellowRedStreaky = () => {
@@ -155,6 +200,9 @@ const allYellowRedStreaky = () => {
     circle.src = './assets/img/yellow-red-streaky.jpg';
   });
   orcaGrid.classList.toggle('solid-grid');
+  buttons.forEach((button) => {
+    button.disabled = true;
+  });
 };
 
 const allLightGreen = () => {
@@ -162,4 +210,7 @@ const allLightGreen = () => {
     circle.src = './assets/img/light-green.jpg';
   });
   orcaGrid.classList.toggle('solid-grid');
+  buttons.forEach((button) => {
+    button.disabled = true;
+  });
 };
