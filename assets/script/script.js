@@ -103,6 +103,7 @@ const allOrange = () => {
   buttons.forEach((button) => {
     button.disabled = true;
   });
+  container.style.backgroundColor = "#ffffff"
 };
 
 const allAmberWhiteStreaky = () => {

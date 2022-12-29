@@ -5,22 +5,24 @@
 }
 
 :root {
-    --bg-grey: darkslategrey;
+    --light-theme-background: #d5bdaf;
+    --dark-theme-background: #22223b;
+    --dark-theme-button-text: #f5ebe0;
 }
 
 .container {
-    background-color: #f5ebe0;
+    background-color: var(--light-theme-background);
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-auto-rows: auto;
 }
 
 .dark-container {
-    background-color: #22223b;
+    background-color: var(--dark-theme-background);
 }
 
 .dark-container button {
-    color: #f5ebe0;
+    color: var(--dark-theme-button-text);
 }
 
 .compact-container {
@@ -71,14 +73,6 @@ main {
     opacity: 0;
 }
 
-.solid-grid img {
-    transition: none;
-}
-
-.solid-grid img:hover {
-    opacity: 1;
-}
-
 button {
     border: none;
     background: none;
@@ -89,6 +83,10 @@ button:hover {
 }
 
 .solid-grid img {
+  background: transparent;
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
   animation: fadeIn ease 1.5;
   -webkit-animation: fadeIn ease-in 1.5s;
   -moz-animation: fadeIn ease-in 1.5s;
@@ -120,27 +118,8 @@ button:hover {
   100% {opacity:1;}
 }
 
-
-.flip-card {
-  background-color: transparent;
-}
-
-.flip-card-inner {
-  position: relative;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-}
-
-.flip-card-back {
-  transform: rotateY(180deg);
+.solid-grid img:hover {
+    border: 2px solid #000;
+    opacity: 1;
+    transform: rotateY(180deg);
 }
