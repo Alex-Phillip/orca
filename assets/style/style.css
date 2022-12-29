@@ -69,7 +69,7 @@ main {
 }
 
 .orca-grid img:hover {
-    border: 2px solid #d5bdaf;
+    border: 2px solid var(--light-theme-background);
     opacity: 0;
 }
 
@@ -85,7 +85,7 @@ button:hover {
 .solid-grid img {
   background: transparent;
   position: relative;
-  transition: transform 0.8s;
+  transition: transform 1.2s;
   transform-style: preserve-3d;
   animation: fadeIn ease 1.5;
   -webkit-animation: fadeIn ease-in 1.5s;
@@ -119,7 +119,7 @@ button:hover {
 }
 
 .solid-grid img:hover {
-    border: 2px solid #000;
+    border: 2px solid var(--dark-theme-background);
     opacity: 1;
     transform: rotateY(180deg);
 }
