@@ -5,6 +5,7 @@ const main = document.querySelector('main');
 const orcaGrid = document.querySelector('.orca-grid');
 const compactBtn = document.querySelector('#compact');
 const darkTheme = document.querySelector('#dark-theme');
+const reset = document.querySelector('.reset')
 const orangeBtn = document.querySelector('#orange');
 const amberWhiteStreakyBtn = document.querySelector('#amber-white-streaky');
 const redOpalBtn = document.querySelector('#red-opal');
